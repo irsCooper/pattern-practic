@@ -7,9 +7,9 @@ def client(creator: Creator) -> None:
     
 
 if __name__ == "__main__":
-    print("App: Launched with the ConcreteCreator1.")
+    print("App: Launched with the CarCreator.")
     client(CarCreator())
     print("\n")
 
-    print("App: Launched with the ConcreteCreator2.")
+    print("App: Launched with the BoatCreator.")
     client(BoatCreator())
