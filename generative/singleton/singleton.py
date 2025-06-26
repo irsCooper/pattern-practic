@@ -1,6 +1,9 @@
 class SingletonMeta(type):
     _instances = {}
 
+    def __init__(cls, *args, **kwargs):
+        super(SingletonMeta, cls).__init__(*args, **kwargs)
+
     def __call__(cls, *args, **kwargs):
         if cls not in cls._instances:
             instance = super().__call__(*args, **kwargs)
