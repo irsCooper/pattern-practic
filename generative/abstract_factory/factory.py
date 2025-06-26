@@ -6,11 +6,11 @@ from wardrobe import AbstractWardrobe, WardrobePlastic, WardrobeWooden
 class AbstractFactory(ABC):
     @abstractmethod
     def create_chair(self) -> AbstractChair:
-        pass 
+        raise NotImplementedError
 
     @abstractmethod
     def create_wardrobe(self) -> AbstractWardrobe:
-        pass 
+        raise NotImplementedError
 
 
 class WoodenFactory(AbstractFactory):

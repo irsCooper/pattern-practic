@@ -5,11 +5,11 @@ from wardrobe import AbstractWardrobe
 class AbstractChair(ABC):
     @abstractmethod
     def useful_function(self) -> str:
-        pass 
+        raise NotImplementedError
 
     @abstractmethod
     def another_useful_function(self, collaborator: AbstractWardrobe) -> str:
-        pass
+        raise NotImplementedError
 
 
 class ChairWooden(AbstractChair):

@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 class AbstractWardrobe(ABC):
     @abstractmethod
     def useful_function(self) -> str:
-        pass 
+        raise NotImplementedError
 
 
 class WardrobeWooden(AbstractWardrobe):
