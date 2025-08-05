@@ -1,6 +1,15 @@
 from services import Adaptee, Target
 from adapters import CompositionAdapter, InheritanceAdapter
 
+"""
+Адаптер -- структурный паттрен выполняющий роль прослойки между 
+двумя объектами, превращая вызовы одного в вызовы понятные другому
+
+Когда применять:
+- нужна конвертация разных типов 
+- совместная работа классов с разными интерфейсами
+"""
+
 
 def client(target: Target) -> None:
     print(target.request(), end="")
